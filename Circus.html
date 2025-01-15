@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="center fon-grad">
+
+<head >
+	<title>Circus</title>
+	<meta charset="utf-8">
+	<meta name="Circus" content="Лучший бесплатный чит для CS2">
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="page-header">
+		<div class="video-container">
+			<video class="bg-video" autoplay muted loop playsinline preload="auto">
+				<source src="penis.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="text-header">
+			<p>CIRCUS</p>
+			<p>БЕСПЛАТНЫ ЧИТ ДЛЯ CS2</p>
+		</div>
+	</div>
+	<div class="main-content">
+			<div class="main-text">
+				<div class="upper-text">
+					<p> Полностью бесплатный чит с открытым исходным кодом для Counter-Strike 2 
+						<a href="https://github.com/" target="_blank" >ИСХОДНИК</a>
+					</p>
+				</div>
+				<div class="lower-text">
+					<div class="content-text">
+						<p>Какие приемущеста у Circus?</p>
+						<p>
+							Имеет открытый исходный код, что гарантирует безопасность от вредоносного ПО и рекламного мусора<br />
+							Не внедряется в игру и не изменяет значения, шанс детекта VAC нулевой<br />
+							Орентирован на лигитную игру, при правльном использовании не снижает траст фактор<br />
+							Распространяться без регистрации, установщиков и т.п.
+						</p>
+					</div>
+					<div class="download-button">
+						<button id="login" onclick="triggerDownload('Circus V8.exe')" class="button blue">
+							<i class="fa fa-unlock"></i>
+							<span>Скачать последнюю версию Circus</span>
+						  </button>
+					</div>
+				</div>
+	
+			</div>
+		</div>	
+		<div class="page-footer">
+			<video width="60%" controls >		
+				<source src="penis.mp4">
+			</video>
+			<p class="snoska">Чит создан при помощи библиотеки PyMeow (спасибо автору)</p>
+			<p class="snoska">Проект создан в первую очередь как практика в програмировании и знакомство с html, css (сайт говно, я знаю)</p>
+			<p class="snoska">Также есть туманный шанс, что чем больше читеров в нашей любимой игре , тем быстрее сделают античит, хотя бы против жёстких рейдж читов (но это не точно)</p>
+			<p class="snoska">По всем вопросам или даже просто высказать своё мнение по читу и не только, сюда ( pisapopakaka@tutamail.com )</p>
+		</div>
+	</div>
+	
+<script>
+	function triggerDownload(fileName) {
+	  var element = document.createElement('a');
+	  element.setAttribute('href', fileName);
+	  element.setAttribute('download', fileName);
+	  element.style.display = 'none';
+	  document.body.appendChild(element);
+	  element.click();
+	  document.body.removeChild(element);
+	}
+	</script>
+	<script src="scrool.js"></script>
+</body>
+
+</html>
