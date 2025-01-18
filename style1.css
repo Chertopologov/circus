@@ -36,12 +36,16 @@ body {
     }
 
     .text-header p {
-        margin: 5px 0;
-        font-size: 2em;
-        font-weight: bold;
+        margin:5px 0;
         text-shadow: 2px 2px 4px #000;
     }
-
+    .text-header :nth-child(1) {
+        font-size: 10em;
+        font-weight: bold;
+    }
+    .text-header :nth-child(2) {
+        font-size: 2em;
+    }
 
 
 /* MAIN_CONNTENT */
@@ -49,9 +53,57 @@ body {
 
 .main-content {
     padding: 20px;
-    text-align: center;
+    
 }   
     .main-text {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        /* height: 100svh; */
+        width: 100%;
+        align-items: center;
+        margin-top: 10svh;
     }
+        h1 {
+            width: 50%;
+            text-align: center;
+            font-size: 45px;
+        }
+        li {
+            font-size: 22px;
+        }
+         .spacer {
+            width: 10%;
+         }
+         
+         .download-container {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            border: 2px solid black;
+            border-radius: 5px;
+            align-items: center;
+            padding: 10px 0 10px 0;
+            margin-top: 100px;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        
+        .version {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            height: 50px;
+            width: 50%;
+            align-items: center;
+            padding-left: 50px;
+        }
+        
+        .download-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            height: 50px;
+            width: 50%;
+            align-items: center;
+            padding-right: 50px;
+        }
