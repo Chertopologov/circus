@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -58,7 +60,6 @@ body {
     .main-text {
         display: flex;
         flex-direction: row;
-        /* height: 100svh; */
         width: 100%;
         align-items: center;
         margin-top: 10svh;
@@ -82,7 +83,7 @@ body {
             border: 2px solid black;
             border-radius: 5px;
             align-items: center;
-            padding: 10px 0 10px 0;
+            padding: 30px 0 30px 0;
             margin-top: 100px;
             margin-left: auto; 
             margin-right: auto;
@@ -106,4 +107,91 @@ body {
             width: 50%;
             align-items: center;
             padding-right: 50px;
+          }
+          
+          .btn {
+              display: flex;
+              width: 350px;
+              height: 80px;
+              cursor: pointer;
+              background: transparent;
+              border: 2px solid #91C9FF;
+              border-radius: 5px;
+              outline: none;
+              transition:  1s ease-in-out;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+           .btn svg {
+              position: absolute;
+              left: 0;
+              top: 0;
+              fill: none;
+              stroke: #fff;
+              stroke-dasharray: 150 480;
+              stroke-dashoffset: 150;
+              transition: stroke-dashoffset 1s ease-in-out;
+              pointer-events: none;
+            }
+            .btn:hover {
+              transition:  1s ease-in-out;
+              background: #4F95DA;
+            }
+            .btn:hover svg {
+              stroke-dashoffset: -480;
+            }
+            .btn span {
+                display: flex;
+              color: rgb(0, 0, 0);
+              font-size: 18px;
+              font-weight: 100;
+              align-items: center;
+            }
+        #file-version {
+            font-size: 24px;
         }
+
+
+
+/* PAGE-FOOTER */
+
+.page-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.video video {
+    max-width: 100%;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+.ps {
+    text-align: center;
+}
+
+.snoska {
+    margin-bottom: 5px;
+    /* font-size: smaller; */
+}
+     

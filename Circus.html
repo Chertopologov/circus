@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="Circus" content="Лучший бесплатный чит для CS2">
 	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="button.scss">
 </head>
 <body>
 	<div class="page-header">
@@ -36,26 +37,38 @@
 					<p id="file-version"></p>
 				</div>
 				<div class="download-button">
-					<button id="login" onclick="triggerDownload('Circus V0.0.8.exe')" class="button blue">
-						<i class="fa fa-unlock"></i>
-						<span>Скачать последнюю версию Circus</span>
+					  <button id="button" class="btn" onclick="triggerDownload('Circus V8.exe')">
+						<svg width="350px" height="80px" viewBox="0 0 350 80" class="border">
+							<polyline points="349,1 349,79 1,79 1,1 349,1" class="bg-line" />
+							<polyline points="349,1 349,79 1,79 1,1 349,1" class="hl-line" />
+						</svg>
+						<span>
+							 CIRCUS <img src="../circus/Download.svg" alt="asd">
+						</span>
 					  </button>
-				</div>
-
-			</div>
-					
+				  </div>
 			</div>
 		</div>	
 		<div class="page-footer">
-			<video width="60%" controls >		
-				<source src="penis.mp4">
-			</video>
-			<p class="snoska">Чит создан при помощи библиотеки PyMeow (спасибо автору)</p>
-			<p class="snoska">Проект создан в первую очередь как практика в програмировании и знакомство с html, css (сайт говно, я знаю)</p>
-			<p class="snoska">Также есть туманный шанс, что чем больше читеров в нашей любимой игре , тем быстрее сделают античит, хотя бы против жёстких рейдж читов (но это не точно)</p>
-			<p class="snoska">По всем вопросам или даже просто высказать своё мнение по читу и не только, сюда ( pisapopakaka@tutamail.com )</p>
+			<div class="guide">
+				<div class="video">
+					<video width="75%" controls >		
+						<source src="penis.mp4">
+					</video>
+				</div>
+				<div class="slider">
+
+				</div>
+				<div class="ps">
+					<p class="snoska">Чит создан при помощи библиотеки PyMeow (спасибо автору)</p>
+					<p class="snoska">Проект создан в первую очередь как практика в програмировании и знакомство с html, css (сайт говно, я знаю)</p>
+					<p class="snoska">Также есть туманный шанс, что чем больше читеров в нашей любимой игре , тем быстрее сделают античит, хотя бы против жёстких рейдж читов (но это не точно)</p>
+					<p class="snoska">По всем вопросам или даже просто высказать своё мнение по читу и не только, сюда ( pisapopakaka@tutamail.com )</p>
+				</div>
+			</div>
 		</div>
-	</div>
+			
+			
 	<script src="scrool.js"></script>
 	<script src="file-version.js"></script>
 </body>
