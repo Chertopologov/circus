@@ -169,6 +169,11 @@ body {
     width: fit-content;
 }
 
+    .guide > p {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
 .video {
     display: flex;
     justify-content: center;
@@ -198,22 +203,22 @@ body {
      
 
 
-/* SLIDE */
+/* SLIDER */
 #slider{
-    width: 100%;
+    width: auto;
     border:4px solid #fff;;
     outline:1px solid #999;
-    height:455px;
+    height:560px;
     margin:-315px auto;
-    background:-webkit-radial-gradient(#ffffff, #ffffff);
-    background:-moz-radial-gradient(#ffffff, #ffffff);
-    background:-ms-radial-gradient(#ffffff, #ffffff);
-    background:-o-radial-gradient(#ffffff, #ffffff);
-    background:radial-gradient(#ffffff, #ffffff);
+    background:-webkit-radial-gradient(#000000, #000000);
+    background:-moz-radial-gradient(#000000, #000000);
+    background:-ms-radial-gradient(#000000, #000000);
+    background:-o-radial-gradient(#000000, #000000);
+    background:radial-gradient(#000000, #000000);
   }
   #screen{
     width:70px;
-    height:450px;
+    height:550px;
     background:#ccc;
     margin:5px 0 0 5px;
     float:left;
@@ -223,7 +228,7 @@ body {
     outline:1px solid #999;
   }
   #screen:hover {
-    width:300px;
+    width:350px;
   }
   #shadow{
     width:600px;
