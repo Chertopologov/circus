@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-
+@font-face {
+    font-family: 'My';
+    src: url('../fonts/morana.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Palui';
+    src: url('../fonts/Osterbar.ttf') format('ttf');
+    font-weight: normal; 
+    font-style: normal;
+  }
 body {
     margin: 0;
     padding: 0;
@@ -20,7 +30,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 0;
+        z-index: -3;
     }
     .bg-video{
         width: 100%;
@@ -37,17 +47,32 @@ body {
         color: #fff;
     }
 
-    .text-header p {
-        margin:5px 0;
-        text-shadow: 2px 2px 4px #000;
-    }
+    
+        .text-header p {
+            background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textflow 5s linear infinite;
+            font-family: 'My';
+        
+}
+
     .text-header :nth-child(1) {
         font-size: 10em;
         font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 30px;
     }
     .text-header :nth-child(2) {
         font-size: 2em;
     }
+
+    @keyframes textflow {
+        from {background-position: 0% center}         
+        to {background-position: 200% center}
+      }
 
 
 /* MAIN_CONNTENT */
@@ -71,6 +96,7 @@ body {
         }
         li {
             font-size: 22px;
+            line-height: 50px;
         }
          .spacer {
             width: 10%;
