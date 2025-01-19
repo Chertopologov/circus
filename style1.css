@@ -1,18 +1,19 @@
 @font-face {
     font-family: 'My';
-    src: url('../fonts/morana.otf') format('opentype');
+    src: url('../circus/fonts/morana.otf') format('opentype');
     font-weight: normal; 
     font-style: normal;
   }
   @font-face {
     font-family: 'Palui';
-    src: url('../fonts/Osterbar.ttf') format('ttf');
+    src: url('../circus/fonts/Osterbar.ttf') format('ttf');
     font-weight: normal; 
     font-style: normal;
   }
 body {
     margin: 0;
     padding: 0;
+    background: radial-gradient(at 0% 0%, #6b5ef7, #f75e5e);;
 }
 
 /* PAGE_HEADER */
@@ -56,7 +57,6 @@ body {
             -webkit-text-fill-color: transparent;
             animation: textflow 5s linear infinite;
             font-family: 'My';
-        
 }
 
     .text-header :nth-child(1) {
@@ -93,10 +93,12 @@ body {
             width: 50%;
             text-align: center;
             font-size: 45px;
+            color: white;
         }
         li {
             font-size: 22px;
             line-height: 50px;
+            color: white;
         }
          .spacer {
             width: 10%;
@@ -123,6 +125,7 @@ body {
             width: 50%;
             align-items: center;
             padding-left: 50px;
+            color: white;
         }
         
         .download-button {
@@ -170,9 +173,11 @@ body {
             .btn span {
                 display: flex;
               color: rgb(0, 0, 0);
-              font-size: 18px;
+              font-size: 25px;
               font-weight: 100;
               align-items: center;
+              font-family: 'My';
+              color: white;
             }
         #file-version {
             font-size: 24px;
@@ -196,8 +201,10 @@ body {
 }
 
     .guide > p {
-        font-size: 60px;
+        font-size: 80px;
         margin-bottom: 20px;
+        color: white;
+        font-family: 'My';
     }
 
 .video {
@@ -220,6 +227,7 @@ body {
 .ps {
     text-align: center;
     margin: 100px;
+    color: white;
 }
 
 .snoska {
