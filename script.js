@@ -51,3 +51,22 @@ function triggerDownload(filename) {
     link.click();
    document.body.removeChild(link);
 }
+
+
+
+// PARALLAX
+const parallaxWrapper = document.querySelector('.parallax-wrapper');
+const parallaxBg = window.getComputedStyle(parallaxWrapper, '::before');
+let startY = parallaxBg.getPropertyValue('transform').split('(')[1].split(')')[0].split(',')[5] || 0;
+
+window.addEventListener('scroll', () => {
+   const scrollY = window.scrollY;
+   const newY = parseFloat(startY) + scrollY * 0.5; // 0.5 - скорость движения, можно менять
+   parallaxWrapper.style.setProperty('--bg-translateY', `${newY}px`); // записываем в переменную
+   parallaxWrapper.style.setProperty('--scroll-y', `${scrollY}px`)
+
+  //  Удаляем стили псевдоэлемента, при этом он по-прежнему существует и будет изменен в css
+   parallaxWrapper.removeAttribute('style');
+
+   parallaxWrapper.classList.add('scrolling')
+});

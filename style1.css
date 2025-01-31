@@ -17,71 +17,85 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* PAGE_HEADER */
-.page-header {
-    position: relative;
+    min-height: 100vh;
+  }
+  .parallax-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 100vh
+  }
+  .parallax-bg {
+    position: fixed;
+      top: 0;
+      left: 10%;
+    width: 80%;
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    .video-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -3;
-    }
-    .bg-video{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: blur(3px); 
-        transition: filter 1s ease-in-out;
-    }
-
-    .text-header {
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        color: #fff;
-    }
-
-    
-        .text-header p {
-            background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
-            background-size: 200% auto;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textflow 5s linear infinite;
-            font-family: 'My';
-}
-
-    .text-header :nth-child(1) {
-        font-size: 10em;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin-top: 30px;
-    }
-    .text-header :nth-child(2) {
-        font-size: 2em;
-    }
-
-    @keyframes textflow {
-        from {background-position: 0% center}         
-        to {background-position: 200% center}
+    background-image: url('../AlbedoBase_XL_Create_a_vector_image_of_a_clown_in_black_and_wh_0.png'); /* Замените на путь к вашему фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    z-index: -4;
+    transform: translateY(0);
+    opacity: 30%;
+  }
+  /* PAGE_HEADER */
+  .page-header {
+      position: relative;
+     height: 100vh; 
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+      .video-container {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -3;
       }
-
-
+      .bg-video{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: blur(3px); 
+          transition: filter 1s ease-in-out;
+      }
+  
+      .text-header {
+          position: relative;
+          z-index: 1;
+          text-align: center;
+          color: #fff;
+      }
+          .text-header p {
+              background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+              background-size: 200% auto;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              animation: textflow 5s linear infinite;
+              font-family: 'My';
+  }
+      .text-header :nth-child(1) {
+          font-size: 10em;
+          font-weight: bold;
+          margin-bottom: 20px;
+          margin-top: 30px;
+      }
+      .text-header :nth-child(2) {
+          font-size: 2em;
+      }
+      @keyframes textflow {
+          from {background-position: 0% center}         
+          to {background-position: 200% center}
+        }
+      .parallax-wrapper.scrolling .parallax-bg {
+          transform: translateY(var(--bg-translateY));
+     }
 /* MAIN_CONNTENT */
-
-
 .main-content {
     padding: 20px;
     max-width: 1440px;
@@ -167,15 +181,12 @@ body {
             display: flex;
             flex-direction: row;
             width: 80%;
-            border: 2px solid black;
-            border-radius: 5px;
             align-items: center;
             padding: 30px 0 30px 0;
             margin-top: 100px;
             margin-left: auto; 
             margin-right: auto;
         }
-        
         .version {
             display: flex;
             flex-direction: row;
@@ -186,7 +197,6 @@ body {
             padding-left: 50px;
             color: white;
         }
-        
         .download-button {
             display: flex;
             flex-direction: row;
@@ -196,7 +206,6 @@ body {
             align-items: center;
             padding-right: 50px;
           }
-          
           .btn {
               display: flex;
               width: 350px;
